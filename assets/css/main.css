@@ -216,21 +216,6 @@ body {
   padding: 0.5em 1em;
 }
 
-.registration__main {
-  max-width: 500px;
-  margin: 0 auto;
-}
-.registration__title {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.registration .form__registro {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 .subscription__container {
   padding: 20px;
   background-color: #63af2b;
@@ -238,24 +223,23 @@ body {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  max-width: 900px;
-  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .subscription__title {
   font-size: 1.9rem;
   margin-bottom: 20px;
-  display: flex;
-  justify-content: flex-start;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 .subscription__form {
   display: flex;
   align-items: center;
-  gap: 90px;
+  gap: 20px;
   width: 100%;
   max-width: 100%;
+  justify-content: center;
 }
 .subscription__input {
   padding: 10px;
@@ -272,4 +256,19 @@ body {
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
+}
+
+.registration__main {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.registration__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.registration .form__registro {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }/*# sourceMappingURL=main.css.map */
