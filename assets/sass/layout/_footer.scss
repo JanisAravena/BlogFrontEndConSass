@@ -1,0 +1,30 @@
+.footer {
+    &__container {
+        @include flex-center;
+        padding: 10px;
+        justify-content: space-between;
+        width: 100%; 
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    &__image {
+        width: 50px;
+        margin-right: 10px;
+        border-radius: 15px;
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    &__credits {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #292C33;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header__brand {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  width: 50px;
+  margin-right: 10px;
+  border-radius: 15px;
+}
+.header__title {
+  font-size: 1.5rem;
+}
+.header__icon-link {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  text-decoration: none;
+  outline: none;
+}
+.header__icon-link i {
+  color: #63af2b;
+  font-size: 3rem;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer__logo {
+  display: flex;
+  align-items: center;
+}
+.footer__image {
+  width: 50px;
+  margin-right: 10px;
+  border-radius: 15px;
+}
+.footer__title {
+  font-size: 1.6rem;
+  text-align: left;
+  font-weight: bold;
+}
+.footer__credits {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.novedades__main {
+  padding: 2em;
+}
+.novedades__title {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.novedades__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.novedades__logo {
+  width: 30px;
+  height: auto;
+  margin-right: 0.5em;
+  border-radius: 50px;
+}
+.novedades__author {
+  font-size: 0.875em;
+  margin-right: 1em;
+}
+.novedades__date {
+  font-size: 0.875em;
+}
+.novedades__content {
+  margin-top: 1em;
+}
+.novedades__content p {
+  margin-bottom: 1em;
+}
+.novedades__image--xl {
+  display: block;
+  margin: 0 auto 1em auto;
+  width: 60%;
+  height: auto;
+  border-radius: 1em;
+}
+
+.populares {
+  padding: 2em;
+}
+.populares__section {
+  margin-bottom: 2em;
+}
+.populares__title {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.populares__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.populares__item {
+  flex: 1 1 calc(33.333% - 1em);
+  max-width: calc(33.333% - 1em);
+}
+
+.form__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.form__buttons .button {
+  padding: 10px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.form__buttons .button--primary {
+  background-color: #63af2b;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  text-decoration: none;
+}
+.form__buttons .button--google {
+  color: #000000;
+  border: 1px solid #ccc;
+  font-weight: bold;
+}
+.form__buttons .button--google img {
+  width: 30px;
+}
+
+.form__group {
+  margin-bottom: 15px;
+}
+.form__label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form__input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.form__footer {
+  text-align: center;
+  margin-top: 20px;
+}
+.form__link {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 1em;
+  border: none;
+}
+.card__image {
+  display: block;
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1em;
+}
+.card__body {
+  padding: 1em;
+}
+.card__title {
+  font-size: 1.25em;
+  margin-bottom: 0.5em;
+}
+.card__date {
+  font-size: 0.875em;
+  margin-bottom: 1em;
+}
+.card__footer {
+  display: flex;
+  align-items: center;
+  padding: 0.5em 1em;
+}
+
+.registration__main {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.registration__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.registration .form__registro {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.subscription__container {
+  padding: 20px;
+  background-color: #63af2b;
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.subscription__title {
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.subscription__form {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+  width: 100%;
+  max-width: 100%;
+}
+.subscription__input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  box-sizing: border-box;
+}
+.subscription__button {
+  background-color: #cccccc;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,33 @@
+.form {
+    &__group {
+        margin-bottom: 15px;
+    }
+
+    &__label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid $color-gray;
+        border-radius: 5px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__footer {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    &__link {
+        color: $color-black;
+        font-weight: bold; 
+        text-decoration: none;
+    }
+}

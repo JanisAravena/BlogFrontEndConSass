@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: space-between; // Distribuye el espacio entre los elementos
+
+    &__brand {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 50px;
+        margin-right: 10px;
+        border-radius: 15px;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+    }
+
+    // Estilos para el enlace del ícono
+    &__icon-link {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        text-decoration: none; 
+        outline: none; 
+
+        i {
+            color: $primary-color;
+            font-size: 3rem; 
+        }
+    }
+}
