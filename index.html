@@ -1,211 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Desafío - Blog FrontEnd</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío - Blog FrontEnd con Sass</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="navbar__container container px-3">
-            <div class="navbar__brand">
-                <!-- Logotipo -->
-                <img src="./assets/img/logos/adl.png" alt="Logo" class="principal__logo">
-                <!-- Título del blog -->
-                <h1 class="navbar__title">Blog FrontEnd</h1>
-            </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__brand">
+            <img src="./assets/img/logos/adl.png" alt="Logo" class="header__logo">
+            <h1 class="header__title">Blog FrontEnd</h1>
         </div>
-    </nav>
+        <a href="./login.html" class="header__icon-link">
+            <i class="fa-solid fa-right-to-bracket"></i>
+        </a>
+    </header>
+    
 
     <!-- Main Container de Novedades -->
-    <hr class="linea">
-    <div class="container_novedades">
-        <main class="main">
-            <h2 class="titulo">Novedades</h2>
-            <!-- Main Card -->
-            <div class="card__novedades">
-                <!-- Imagen del artículo -->
-                <img src="assets/img/posts/bootstrap.png" class="card__image--xl" alt="Bootstrap">
-                <div class="card__body">
-                    <!-- Fecha del artículo -->
-                    <div class="card__date">24 de Noviembre, 2022</div>
-                    <!-- Título del artículo -->
-                    <h3 class="card__title">Modifica el tema de Boostrap con variables CSS</h3>
-                    <div class="card__footer">
-                        <!-- Logotipo pequeño -->
-                        <img src="assets/img/logos/adl.png" class="logo__image" alt="Logotipo pequeño">
-                        <!-- Texto del pie de página -->
-                        <span class="footer__desafio">Desafío latam</span>
-                    </div>
-                </div>
+    <hr class="divider">
+    <div class="novedades">
+        <main class="novedades__main">
+            <h2 class="novedades__title">Modifica el tema de Bootstrap con variables CSS</h2>
+            <div class="novedades__info">
+                <img src="assets/img/logos/adl.png" class="novedades__logo" alt="Logotipo pequeño">
+                <span class="novedades__author">Desafío Latam</span>
+                <div class="novedades__date">24 de Noviembre, 2022</div>
+            </div>
+            <div class="novedades__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sed beatae quasi facere unde adipisci alias odio culpa enim quam, consequuntur distinctio ad aliquid voluptatibus dignissimos dolores officia nihil esse. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis sint optio odio minus molestias eius culpa magni incidunt id vel temporibus molestiae, voluptatum voluptates delectus aliquam nulla ad dolorem expedita. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus culpa cupiditate reiciendis dolores pariatur libero amet facilis vel quo magni explicabo, voluptatum consectetur officia ad, quaerat earum perferendis aspernatur! Itaque?</p>
+                <img src="assets/img/posts/bootstrap.png" class="novedades__image--xl" alt="Bootstrap">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel in facilis veniam numquam ipsum ducimus autem earum culpa sit. Sapiente numquam repellat odio, odit pariatur omnis porro quam itaque exercitationem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore provident dolor maxime, optio laudantium deleniti nisi porro pariatur esse possimus quod magnam dignissimos nobis modi cupiditate. Possimus consequuntur eius nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellat possimus nihil ab at enim. Maxime minima, architecto voluptate fugiat ab asperiores, illum quas in velit quibusdam nisi laudantium. Delectus!</p>
             </div>
         </main>
-
-        <!-- Sidebar -->
-        <section class="side">
-            <div class="main__side">
-                <!-- Sidebar Card 1 de JavaSacritp-->
-                <div class="side__card">
-                    <img src="assets/img/posts/Herencia-JS.png" class="card__image" alt="Herencia JS">
-                    <div class="card__body">
-                        <div class="card__date">24 de Noviembre, 2022</div>
-                        <h3 class="card__title">Herencia en Javascript</h3>
-                        <div class="card__footer">
-                            <img src="assets/img/logos/adl.png" class="logo__image" alt="Logotipo pequeño">
-                            <span class="footer__desafio">Desafío latam</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Sidebar Card 2 de HTML-->
-                <div class="side__card">
-                    <img src="assets/img/posts/Etiquetas-semánticas-HTML.png" class="card__image" alt="Etiquetas HTML">
-                    <div class="card__body">
-                        <div class="card__date">24 de Noviembre, 2022</div>
-                        <h3 class="card__title">Etiquetas <br/>semánticas</h3>
-                        <div class="card__footer">
-                            <img src="assets/img/logos/adl.png" class="logo__image" alt="Logotipo pequeño">
-                            <span class="footer__desafio">Desafío latam</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Sidebar Card 3 DE React-->
-                <div class="side__card">
-                    <img src="assets/img/posts/reactComponents.png" class="card__image" alt="React Components">
-                    <div class="card__body">
-                        <div class="card__date">24 de Noviembre, 2022</div>
-                        <h3 class="card__title">Componentes<br/>React</h3>
-                        <div class="card__footer">
-                            <img src="assets/img/logos/adl.png" class="logo__image" alt="Logotipo pequeño">
-                            <span class="footer__desafio">Desafío latam</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
 
-    <!-- Popular and Categories -->
-    <hr class="linea">
-    <div class="container_populares">
-        <section>
-            <h2 class="titulo">Populares</h2>
-            <div class="container_componentes">
-                <!-- Popular Card Row 1 de Vue y Sass-->
-                <div class="componente">
+    <!-- Populares Relacionados -->
+    <div class="populares">
+        <section class="populares__section">
+            <h2 class="populares__title">Relacionados</h2>
+            <div class="populares__grid">
+                <div class="populares__item">
                     <div class="card">
                         <img src="assets/img/posts/vue-components.png" class="card__image" alt="Vue Components">
                         <div class="card__body">
                             <div class="card__date">24 de Noviembre, 2022</div>
                             <h3 class="card__title">Componentes Vue</h3>
                             <div class="card__footer">
-                                <img src="assets/img/logos/adl.png" class="logo__image" alt="Logotipo pequeño">
-                                <span class="footer__desafio">Desafío latam</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="assets/img/posts/sass.jpg" class="card__image" alt="Sass">
-                        <div class="card__body">
-                            <div class="card__date">24 de Noviembre, 2022</div>
-                            <h3 class="card__title">Componentes Vue</h3>
-                            <div class="card__footer">
-                                <img src="assets/img/logos/adl.png" class="logo__image" alt="Logotipo pequeño">
-                                <span class="footer__desafio">Desafío latam</span>
+                                <img src="assets/img/logos/adl.png" class="novedades__logo" alt="Logotipo pequeño">
+                                <span class="card__author">Desafío Latam</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Popular Card Row 2 -->
-                <div class="componente">
+                <div class="populares__item">
                     <div class="card">
                         <img src="assets/img/posts/api-js.png" class="card__image" alt="API JS">
                         <div class="card__body">
                             <div class="card__date">24 de Noviembre, 2022</div>
-                            <h3 class="card__title">Componentes Vue</h3>
+                            <h3 class="card__title">Consumo de API con JavaScript</h3>
                             <div class="card__footer">
-                                <img src="assets/img/logos/adl.png" class="logo__image" alt="Logotipo pequeño">
-                                <span class="footer__desafio">Desafío latam</span>
+                                <img src="assets/img/logos/adl.png" class="novedades__logo" alt="Logotipo pequeño">
+                                <span class="card__author">Desafío Latam</span>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="populares__item">
                     <div class="card">
-                        <img src="assets/img/posts/bootstrap.png" class="card__image" alt="Bootstrap">
+                        <img src="assets/img/posts/sass.jpg" class="card__image" alt="Sass">
                         <div class="card__body">
                             <div class="card__date">24 de Noviembre, 2022</div>
-                            <h3 class="card__title">Componentes Vue</h3>
+                            <h3 class="card__title">CSS reutilizable con Sass</h3>
                             <div class="card__footer">
-                                <img src="assets/img/logos/adl.png" class="logo__image" alt="Logotipo pequeño">
-                                <span class="footer__desafio">Desafío latam</span>
+                                <img src="assets/img/logos/adl.png" class="novedades__logo" alt="Logotipo pequeño">
+                                <span class="card__author">Desafío Latam</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Categories -->
-        <section>
-            <h2 class="titulo">Categorías</h2>
-            <div class="categoria__side">
-                <!-- Badge HTML -->
-                <div class="side__badge side__badge--bg-html">
-                    <img src="assets/img/logos/html.png" class="badge__image" alt="HTML">
-                    <h3 class="badge__title">HTML</h3>
-                </div>
-                <!-- Badge JS -->
-                <div class="side__badge side__badge--bg-js">
-                    <img src="assets/img/logos/js.png" class="badge__image" alt="Javascript">
-                    <h3 class="badge__title">Javascript</h3>
-                </div>
-                <!-- Badge CSS -->
-                <div class="side__badge side__badge--bg-css">
-                    <img src="assets/img/logos/css.png" class="badge__image" alt="CSS">
-                    <h3 class="badge__title">CSS</h3>
-                </div>
-                <!-- Badge React -->
-                <div class="side__badge side__badge--bg-react">
-                    <img src="assets/img/logos/react.png" class="badge__image" alt="React">
-                    <h3 class="badge__title">React</h3>
-                </div>
-                <!-- Badge Vue -->
-                <div class="side__badge side__badge--bg-vue">
-                    <img src="assets/img/logos/vue.png" class="badge__image" alt="Vue">
-                    <h3 class="badge__title">Vue</h3>
-                </div>
-                <!-- Badge Bootstrap -->
-                <div class="side__badge side__badge--bg-boot">
-                    <img src="assets/img/logos/bootstrap-logo.png" class="badge__image" alt="Bootstrap">
-                    <h3 class="badge__title">Bootstrap</h3>
-                </div>
-                <!-- Texto para ver todas las categorías -->
-                <span class="side__text">Ver todas las categorías <i class="fa-solid fa-chevron-right"></i></span>
             </div>
         </section>
     </div>
 
+   
     <!-- Footer -->
-    <hr class="linea">
+    <hr class="line">
     <footer class="footer">
-        <div class="container__footer">
-            <div class="logo__footer">
-                <!-- Logotipo en el pie de página -->
-                <img src="assets/img/logos/adl.png" class="logo__image" alt="Logotipo pequeño">
-                <!-- Título del blog en el pie de página -->
+        <div class="footer__container">
+            <div class="footer__logo">
+                <img src="assets/img/logos/adl.png" class="footer__image" alt="Logotipo pequeño">
                 <span class="footer__title">Blog Frontend</span>
             </div>
-            <div class="footer__link">
-              Desafío Latam - 2023
-            </div>
+            <div class="footer__credits">Desafío Latam - 2023</div>
         </div>
     </footer>
 
     <script src="https://kit.fontawesome.com/da5be8e1a4.js" crossorigin="anonymous"></script>
 </body>
-
 </html>

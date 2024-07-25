@@ -1,0 +1,48 @@
+.novedades {
+    &__main {
+        padding: 2em;
+    }
+
+    &__title {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+
+    &__logo {
+        width: 30px;
+        height: auto;
+        margin-right: 0.5em;
+        border-radius: 50px;
+    }
+
+    &__author {
+        font-size: 0.875em;
+        margin-right: 1em;
+    }
+
+    &__date {
+        font-size: 0.875em;
+    }
+
+    &__content {
+        margin-top: 1em;
+
+        p {
+            margin-bottom: 1em;
+        }
+    }
+
+    &__image--xl {
+        display: block; 
+        margin: 0 auto 1em auto;
+        width: 60%; 
+        height: auto;
+        border-radius: 1em;
+    }
+}
